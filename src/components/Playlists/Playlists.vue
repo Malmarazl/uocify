@@ -22,7 +22,7 @@ export default {
             this.$router.push({
                 name: 'playlist',
                 params: { q: id },
-            }).catch(() => console.log("Error al ir a la playlist"));
+            }).catch(() => console.log("Error going to playlist"));
         }
     }
 }

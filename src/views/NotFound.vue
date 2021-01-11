@@ -1,10 +1,10 @@
 <template>
     <main class="page-notfound">
         <img class="icon-sad" src="@/assets/icon-sad.svg" alt="No encontrado">
-        <h1 class="main-title">Página no encontrada</h1>
+        <h1 class="main-title">Page not found</h1>
 
         <router-link to="/">
-            Volver a la página de inicio
+           Return to homepage
         </router-link>
     </main>
 </template>

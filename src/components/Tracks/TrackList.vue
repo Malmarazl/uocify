@@ -3,9 +3,9 @@
         <thead>
             <tr>
                 <th></th>
-                <th>Canción</th>
-                <th>Artista</th>
-                <th>Álbum</th>
+                <th>Song</th>
+                <th>Artist</th>
+                <th>Album</th>
                 <th class="aright">D.</th>
             </tr>
         </thead>

@@ -2,8 +2,8 @@
     <main class="page-home">
         <div class="container">
             <img class="logo" src="@/assets/icon.svg" alt="logo">
-            <h1 class="main-title">¿En busca de música?</h1>
-            <p class="lorem-textum">Aquí podrás encontrar lo último que se escucha en todas las radios. ¡No te lo pierdas! </p>
+            <h1 class="main-title">Looking for music?</h1>
+            <p class="lorem-textum"> Here you can find the latest that is heard on all radios. Do not miss it!</p>
             <Loader :show="loading"/>
             <playlists :playlists="playlists" />
         </div>

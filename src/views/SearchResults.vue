@@ -1,41 +1,41 @@
 <template>
     <main class="page-search">
-        <h1 class="main-title">Resultados de <span>{{query}}</span></h1>
+        <h1 class="main-title">Results of <span>{{query}}</span></h1>
         <b-tabs>
-            <b-tab id="tabAll" title="Todo" active>
-                <h2 class="title">Canciones <fa-icon icon="chevron-right" class="icon" /></h2>
+            <b-tab id="tabAll" title="All" active>
+                <h2 class="title">Songs <fa-icon icon="chevron-right" class="icon" /></h2>
                 <Loader :show="loading"/>
                 <track-list v-if="tracks.length > 0" :tracks="tracks.slice(0,6)" />
-                <p v-if="tracks.length == 0 && !loading">No hay resultados de canciones</p>
+                <p v-if="tracks.length == 0 && !loading">No songs results</p>
 
-                <h2 class="title">Álbumes <fa-icon icon="chevron-right" class="icon" /></h2>
+                <h2 class="title">Albums <fa-icon icon="chevron-right" class="icon" /></h2>
                 <Loader :show="loading"/>
                 <album-list v-if="albums.length > 0" :albums="albums.slice(0,6)" />
-                <p v-if="albums.length == 0 && !loading">No hay resultados de álbumes</p>
+                <p v-if="albums.length == 0 && !loading">No albums results</p>
 
-                <h2 class="title">Artistas <fa-icon icon="chevron-right" class="icon" /></h2>
+                <h2 class="title">Artists <fa-icon icon="chevron-right" class="icon" /></h2>
                 <Loader :show="loading"/>
                 <artist-list v-if="artists.length > 0" :artists="artists.slice(0,6)" />
-                <p v-if="artists.length == 0 && !loading">No hay resultados de artistas</p>              
+                <p v-if="artists.length == 0 && !loading">No artist results</p>              
 
             </b-tab>            
-            <b-tab id="tabTracks" title="Canciones">
-                <h2 class="title">{{tracksTotal}} canciones</h2>
+            <b-tab id="tabTracks" title="Songs">
+                <h2 class="title">{{tracksTotal}} songs</h2>
                 <Loader :show="loading"/>
                 <track-list v-if="tracks.length > 0" :tracks="tracks" />
-                <p v-if="tracks.length == 0 && !loading">No hay resultados de canciones</p>
+                <p v-if="tracks.length == 0 && !loading">No songs results</p>
             </b-tab>
-            <b-tab id="tabAlbums" title="Álbumes">
-                <h2 class="title">{{albumsTotal}} álbumes</h2>
+            <b-tab id="tabAlbums" title="Albums">
+                <h2 class="title">{{albumsTotal}} albums</h2>
                 <Loader :show="loading"/>
                 <album-list v-if="albums.length > 0" :albums="albums" />
-                <p v-if="albums.length == 0 && !loading">No hay resultados de álbumes</p>
+                <p v-if="albums.length == 0 && !loading">No albums results</p>
             </b-tab>            
-            <b-tab id="tabArtists" title="Artistas">
-                <h2 class="title">{{artistsTotal}} artistas</h2>
+            <b-tab id="tabArtists" title="Artists">
+                <h2 class="title">{{artistsTotal}} artists</h2>
                 <Loader :show="loading"/>
                 <artist-list v-if="artists.length > 0" :artists="artists" />
-                <p v-if="artists.length == 0 && !loading">No hay resultados de artistas</p>
+                <p v-if="artists.length == 0 && !loading">No artist results</p>
             </b-tab>
         </b-tabs>
     </main>

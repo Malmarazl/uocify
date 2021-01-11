@@ -14,8 +14,8 @@
             </div>
 
             <ul v-if="!isLoggedIn" class="session">
-                <li><router-link to="/login">Iniciar sesión</router-link></li>
-                <li><router-link to="/register">Registrar</router-link></li>
+                <li><router-link to="/login">Log in</router-link></li>
+                <li><router-link to="/register">Register</router-link></li>
             </ul>            
         </div>
     </header>

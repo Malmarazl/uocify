@@ -3,8 +3,8 @@
 
     <section class="box-auth">
       <img class="logo" alt="logo" src="@/assets/icon.svg">
-      <h1 class="main-title">Iniciar sesión</h1>
-      <p class="auth-intro">Inicia sesión en uocify para disfrutar de miles de canciones.</p>
+      <h1 class="main-title">Log in</h1>
+      <p class="auth-intro">Login to uocify to enjoy thousands of songs.</p>
 
       <form>
           <div class="form-group">
@@ -12,17 +12,17 @@
             <input placeholder="Correo electrónico" type="email" id="email" v-model="email" class="form-control">
           </div>
           <div class="form-group">
-            <label class="form-label" for="password">Contraseña</label>
-            <input placeholder="Contraseña" type="password" id="password" v-model="password" class="form-control">
+            <label class="form-label" for="password">Password</label>
+            <input placeholder="Password" type="password" id="password" v-model="password" class="form-control">
           </div>
-          <button v-on:click="login" class="btn btn-primary btn-lg">Iniciar sesión</button>
+          <button v-on:click="login" class="btn btn-primary btn-lg">Log in</button>
       </form>
 
       <p v-if="error" class="auth-error">
         {{ error }}
       </p>      
 
-      <p class="auth-bottom">¿No tienes cuenta?   <router-link to="/register" class="alink">Regístrate</router-link></p>
+      <p class="auth-bottom">You do not have an account?   <router-link to="/register" class="alink">Sign up</router-link></p>
     </section>
 
   </main>
@@ -47,7 +47,7 @@ export default {
         .signInWithEmailAndPassword(this.email, this.password)
         .then(
           data => {
-            console.log(`Sesión iniciada correctamente con el correo: ${data.user.email}`);
+            console.log(`Session successfully started with email: ${data.user.email}`);
             this.$router.push("/");
           },
           err => {

@@ -3,9 +3,9 @@
         <figure class="playlist-list row">
             <img class="playslist-cover" :src="playlist.picture_big" :alt="playlist.title">
             <div v-if="!loading">
-                <p class="playlist-data"><span>Título: </span>{{ playlist.title }}</p>
-                <p class="playlist-data"> <span>Descripción: </span>{{ playlist.description }}</p>
-                <p class="playlist-data"> <span>Número de canciones: </span>{{ playlist.nb_tracks }}</p>
+                <p class="playlist-data"><span>Tittle: </span>{{ playlist.title }}</p>
+                <p class="playlist-data"> <span>Description: </span>{{ playlist.description }}</p>
+                <p class="playlist-data"> <span>Number of songs: </span>{{ playlist.nb_tracks }}</p>
                 <p class="playlist-data"> <span>Fans: </span>{{ playlist.fans | formatNumber}}</p>
             </div>
         </figure>
