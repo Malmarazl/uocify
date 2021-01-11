@@ -1,5 +1,11 @@
 # uocify
 
+Welcome to uocify, an application where you can see the music you want thanks to the Deezer API.
+
+In this link you can see the final result:
+
+https://uocify-malmaraz.netlify.app/
+
 ## Project setup
 ```
 npm install
